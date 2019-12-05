@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+
+        <variable
+            name="data"
+            type="com.solution.catterpillars.ui.home.content.HomeFragmentViewModel" />
+
+    </data>
+
+
+<!--
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/mainView"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/likeButtonView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click on like button below then press complete"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/likeButton"
+                android:layout_toStartOf="@id/likeButton"
+                android:textColor="@color/moreDarkgrey"
+                android:padding="@dimen/_8sdp"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:background="@color/com_facebook_blue"
+                android:id="@+id/likeButton"
+                android:layout_width="wrap_content"
+                android:text="@string/completed"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_8sdp"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    <com.solution.catterpillars.util.NestedWebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgrey"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </LinearLayout>
+</layout>

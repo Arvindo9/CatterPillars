@@ -1,0 +1,214 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:id="@+id/bottom_panels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_18sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Filter by" />
+
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/startDate"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/edittext_bg"
+                        android:drawableRight="@drawable/ic_date_range_gray_24dp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/start_date"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:padding="@dimen/_12sdp" />
+
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/endDate"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/edittext_bg"
+                        android:drawableRight="@drawable/ic_date_range_gray_24dp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/end_date"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:padding="@dimen/_12sdp" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/transactionId"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="Transaction id"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:padding="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/mobileL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/countryCode"
+                                style="@style/TextAppearance.AppCompat.Subhead"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:background="@drawable/edittext_bg"
+                                android:hint="@string/_91"
+                                android:inputType="number"
+                                android:paddingLeft="@dimen/dp_57"
+                                android:paddingTop="@dimen/_12sdp"
+                                android:paddingRight="@dimen/_12sdp"
+                                android:paddingBottom="@dimen/_12sdp" />
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cardView"
+                                android:layout_width="45dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_7"
+                                card_view:cardCornerRadius="@dimen/dp_4">
+
+                                <android.support.v7.widget.AppCompatImageView
+                                    android:id="@+id/flagIcon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:onClick="onClick"
+                                    android:scaleType="fitXY" />
+                            </android.support.v7.widget.CardView>
+                        </FrameLayout>
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/mobile"
+                            style="@style/TextAppearance.AppCompat.Subhead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_3"
+                            android:layout_marginLeft="@dimen/dp_3"
+                            android:background="@drawable/edittext_bg"
+                            android:hint="@string/mobile_no"
+                            android:inputType="number"
+                            android:padding="@dimen/_12sdp" />
+                    </LinearLayout>
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/topCountFilter"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/edittext_bg"
+                        android:drawableRight="@drawable/ic_expand_more_gray_24dp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/load_list_count"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:padding="@dimen/_12sdp" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/signUpTaskStatus"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/edittext_bg"
+                        android:drawableRight="@drawable/ic_expand_more_gray_24dp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/signup_task_status"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:padding="@dimen/_12sdp" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/dailyTaskStatus"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:background="@drawable/edittext_bg"
+                        android:drawableRight="@drawable/ic_expand_more_gray_24dp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/daily_task_status"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:padding="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/filter"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_18sdp"
+                    android:layout_marginRight="@dimen/_18sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/button_border_accent"
+                    android:elevation="@dimen/_4dp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:text="@string/filter"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</layout>
+

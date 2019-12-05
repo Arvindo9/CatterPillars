@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+            android:id="@+id/bottom_panels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/topView"
+            android:background="@null"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/imageView4"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@color/colorPrimary"
+                        app:layout_constraintBottom_toTopOf="@id/guideline"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                          android:layout_above="@+id/imageView_upper"
+                            android:text="@string/reffer_earn"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/imageView_upper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:elevation="@dimen/dp_4"
+                            android:src="@mipmap/app_icon_round_white" />
+                    </RelativeLayout>
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guideline"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.4" />
+
+                    <LinearLayout
+                        android:id="@+id/reffral_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_border_accent"
+                        android:elevation="@dimen/dp_4"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp"
+                        app:layout_constraintBottom_toBottomOf="@id/guideline"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/guideline">
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Subhead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My code : "
+                            android:textColor="@color/colorPrimary" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/code"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12216"
+                            android:textColor="@android:color/white"
+                            android:textIsSelectable="true"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+
+                        android:layout_marginTop="@dimen/_20sdp"
+
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@+id/reffral_code">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_8sdp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:id="@+id/chaeckBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Show Mobile No In Referal Link" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/linkView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_focused"
+                                android:padding="@dimen/_5sdp"
+                                android:text="https://catterpillars.in/home/useraddreferal/12216"
+                                android:textColor="@color/moreDarkgrey"
+                                android:textIsSelectable="true" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_8sdp">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/whatsapp"
+                                android:layout_width="@dimen/dp_45"
+                                android:layout_height="@dimen/dp_45"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/ic_error"
+                                android:layout_marginRight="@dimen/_8sdp" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/facebook"
+                                android:layout_width="@dimen/dp_45"
+                                android:layout_height="@dimen/dp_45"
+                                android:layout_marginRight="@dimen/_8sdp" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/gmail"
+                                android:layout_width="@dimen/dp_45"
+                                android:layout_height="@dimen/dp_45"
+                                android:layout_marginRight="@dimen/_8sdp"/>
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/twitter"
+                                android:layout_width="@dimen/dp_45"
+                                android:layout_height="@dimen/dp_45"
+                                android:layout_marginRight="@dimen/_8sdp" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/google_plus"
+                                android:layout_width="@dimen/dp_45"
+                                android:layout_height="@dimen/dp_45" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/copyLink"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_border"
+                                android:elevation="@dimen/_4dp"
+                                android:gravity="center"
+                                android:layout_margin="@dimen/_8sdp"
+                                android:padding="@dimen/_10sdp"
+                                android:text="Copy Link"
+                                android:textColor="@android:color/white" />
+                        </LinearLayout>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_height="wrap_content"
+                            android:text="I am Inviting you to join Catterpillar " />
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="A simple and secure earnig app my code 12216. just enter it before creating account, Once you have complete your signup task will each get 15 Rs " />
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/shareNow"
+                            style="@style/TextAppearance.AppCompat.Subhead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_20sdp"
+                            android:background="@drawable/button_border"
+                            android:elevation="@dimen/_4dp"
+                            android:gravity="center"
+                            android:padding="@dimen/_15sdp"
+                            android:text="Share Now"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </android.support.constraint.ConstraintLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+</layout>
+

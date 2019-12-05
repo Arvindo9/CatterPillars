@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#ac2a06</color>
+    <color name="white">#ffffff</color>
+    <color name="white_t">#b9ffffff</color>
+
+
+
+    <color name="snackBarActionColor">#18897d</color>
+    <color name="orange1">#dc9812</color>
+    <color name="green">#1bc23f</color>
+    <color name="btn_color3">#10a33c</color>
+    <color name="btn_color1">#14a90c</color>
+    <color name="btn_color">#83e466</color>
+    <color name="blue">#3c64e9</color>
+    <color name="bright_red" >#e93c4d</color>
+    <color name="application_background">#8cffa6</color>
+    <color name="centre_color">#dbf9a3</color>
+    <color name="end_color">#d2fd9c</color>
+    <color name="color_auto_text">#57befa</color>
+    <color name="btn_disable">#b6baba</color>
+    <color name="redThemeColorPrimary">#3692f4</color>
+    <color name="redThemeColorPrimaryDark">#2f7ed3</color>
+    <color name="redThemeColorPrimaryDarkest">#083c74</color>
+    <color name="redThemeColorAccent">#E1E2E1</color>
+    <color name="redThemeBlue">#40c4ff</color>
+    <color name="redThemeBlueDark">#29B6F6</color>
+    <color name="black">#000000</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="grayDark">#8f8f8f</color>
+    <color name="moreDarkgrey">#6e6e6e</color>
+    <color name="lightgrey">#c7c3c3</color>
+    <color name="morelightgrey">#e9e6e6</color>
+    <color name="btn_pink"> #f24964</color>
+    <color name="moremorelightgrey">#f4f4f4</color>
+    <color name="dark_green">#375302</color>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.solution.catterpillars.ui.home.HomeViewModel" />
+
+    </data>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/rootLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <include
+                android:id="@+id/toolbarView"
+                layout="@layout/toolbar" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbarView">
+                <RelativeLayout
+                    android:id="@+id/networkErrorView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@android:color/holo_red_dark">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_marginLeft="@dimen/_4dp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/network_not_found"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/retryBtn"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_7"
+                        android:layout_marginRight="@dimen/_4dp"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTint="@android:color/transparent"
+                        android:text="Retry"/>
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame"
+                    android:layout_below="@+id/networkErrorView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/networkError"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:text="Retry"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:drawableTop="@drawable/ic_network_error"
+                    android:textColor="@android:color/holo_red_dark"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/drawer_view" />
+    </android.support.v4.widget.DrawerLayout>
+</layout>

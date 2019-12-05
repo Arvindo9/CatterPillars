@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imageView_upper"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/catterpillarlogo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/referandearn" />
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--android:id="@+id/imageView_upper"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@mipmap/app_icon_round_white" -->
+            <!--/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rect2">
+
+                    <LinearLayout
+                        android:id="@+id/lltest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/chaeckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Show Mobile No In Referal Link" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/linkView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rounded_focused"
+                            android:padding="@dimen/_5sdp"
+                            android:text="https://catterpillars.in/home/useraddreferal/12216"
+                            android:textColor="@color/moreDarkgrey"
+                            android:textIsSelectable="true" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lltest"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/whatsapp"
+                            android:layout_width="@dimen/dp_42"
+                            android:layout_height="@dimen/dp_42"
+                            android:layout_marginRight="@dimen/_6sdp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/ic_error" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/facebook"
+                            android:layout_width="@dimen/dp_42"
+                            android:layout_height="@dimen/dp_42"
+                            android:layout_marginRight="@dimen/_6sdp" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/gmail"
+                            android:layout_width="@dimen/dp_42"
+                            android:layout_height="@dimen/dp_42"
+                            android:layout_marginRight="@dimen/_6sdp" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/twitter"
+                            android:layout_width="@dimen/dp_42"
+                            android:layout_height="@dimen/dp_42"
+                            android:layout_marginRight="@dimen/_6sdp" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/google_plus"
+                            android:layout_width="@dimen/dp_42"
+                            android:layout_height="@dimen/dp_42" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/copyLink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_6sdp"
+                            android:background="@drawable/button_border"
+                            android:elevation="@dimen/_4dp"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:text="Copy Link"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/title"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_text2"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Daily Task Complete"
+                        android:textColor="@color/colorAccent" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/description"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="Congratulation your daily Task Has Been Complete INR 6 Has Been Credited in your wallet."
+                        android:textColor="@color/black" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/subDescription"
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/share_daily_task_notice"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/visitView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="@dimen/_4dp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_below="@+id/subDescription"
+                        android:layout_centerHorizontal="true">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/visitMsg"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/description"
+                            android:layout_centerHorizontal="true"
+                           android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Visit for Recharge :-"
+                            android:textColor="@color/black" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/visit"
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/description"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                           android:textStyle="bold"
+                            android:background="@drawable/rounded_focused"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_4dp"
+                            android:paddingRight="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_4dp"
+                            android:text="Visit"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/reffral_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="#f24964"
+                        android:elevation="@dimen/dp_4"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp"
+
+                        >
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/TextAppearance.AppCompat.Subhead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Refer Code : "
+                            android:textColor="@color/white" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/code"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12216"
+                            android:textColor="@android:color/white"
+                            android:textIsSelectable="true"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:gravity="center|top">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/shareNow"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/button_border"
+                android:elevation="@dimen/_4dp"
+                android:gravity="center|top"
+                android:padding="@dimen/_15sdp"
+                android:text="Share Now"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

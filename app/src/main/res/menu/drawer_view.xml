@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/membersDetails"
+            android:icon="@drawable/ic_member_black_24dp"
+            android:title="Member Details" />
+
+        <item
+            android:id="@+id/aboutUs"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="@string/about_us" />
+
+        <!--<item-->
+            <!--android:id="@+id/termsAndCondition"-->
+            <!--android:icon="@drawable/ic_arrow_back"-->
+            <!--android:title="@string/tc" />-->
+
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/setting" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/logout" />
+    </group>
+</menu>

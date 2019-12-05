@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <!--app:layout_scrollFlags="scroll|enterAlways"-->
+
+                <ImageView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_25dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/catterpillar_white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/nextBtn"
+                    style="@style/TextAppearance.AppCompat.Menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/rounded_button_white"
+                    android:elevation="@dimen/dp_4"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/next"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/taskCompleateddBtn"
+                    style="@style/TextAppearance.AppCompat.Menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/rounded_button_white"
+                    android:elevation="@dimen/dp_4"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/task_completed"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/shareBtn"
+                    style="@style/TextAppearance.AppCompat.Menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:elevation="@dimen/dp_4"
+                    android:padding="@dimen/_8sdp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_share_black" />
+                <ImageView
+                    android:id="@+id/searchIcon"
+                    style="@style/TextAppearance.AppCompat.Menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:elevation="@dimen/dp_4"
+                    android:padding="@dimen/_8sdp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_search" />
+                <LinearLayout
+                    android:id="@+id/timeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:elevation="@dimen/dp_4"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/TextAppearance.AppCompat.Menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/time" />
+
+                    <!--<android.support.v7.widget.AppCompatTextView-->
+                        <!--style="@style/TextAppearance.AppCompat.Menu"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="@dimen/_2dp"-->
+                        <!--android:text="@string/colon" />-->
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/time"
+                        style="@style/TextAppearance.AppCompat.Menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        tools:text="12:00" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <RelativeLayout
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/white"
+                android:elevation="@dimen/_4dp"
+                android:clickable="true"
+                android:visibility="gone"
+                android:gravity="center_vertical">
+
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/clearBtn"
+                    android:drawableLeft="@drawable/ic_search_gray"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/backBtn"
+                    android:background="@android:color/white"
+                    android:hint="Search"
+                    android:maxLines="1"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textColor="@android:color/black"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/clearBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_4dp"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_close" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+</layout>

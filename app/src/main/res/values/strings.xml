@@ -1,0 +1,212 @@
+<resources>
+    <string name="app_name">CatterPillars</string>
+    <string name="logo">logo</string>
+    <string name="mobileNumber">Mobile number</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="loginRegistration">Login or Registration</string>
+    <string name="next">Next</string>
+    <string name="errorMobile">Invalid mobile number</string>
+    <string name="network_error">Network error</string>
+    <string name="password"> Password</string>
+    <string name="login">Login</string>
+    <string name="errorPassword">Invalid password</string>
+    <string name="textCode">Enter your friend refer code or mobile number</string>
+    <string name="reference_code">Reference code</string>
+    <string name="text2">Do not have refer code?</string>
+    <string name="click_here">click here</string>
+    <string name="text3">Kindly use refer code from the person who gave this app link.
+        Still you don’t have refer code ? Use: 5US</string>
+    <string name="i_agree_with">I agree with</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="confirmPassword">Confirm password</string>
+    <string name="registration">Registration</string>
+    <string name="errorConfirmPassword">Password does not match</string>
+    <string name="try_again">Try again</string>
+    <string name="new_registration_sign_up">New registration sign up</string>
+
+
+    <string name="str_ShowOnPermisstion">Please Allow permission for your app.
+        If you deny permissions will not be able to use functionality of this app.</string>
+    <string name="userName">User name</string>
+    <string name="email">Email</string>
+    <string name="errorUserName">Enter user name</string>
+    <string name="errorEmail">Invalid email address</string>
+    <string name="logout">Logout</string>
+    <string name="about_us">About us</string>
+    <string name="tc"><![CDATA[T & C]]></string>
+    <string name="acceptTc"><![CDATA[Accept T&C and privacy policy]]></string>
+    <string name="home">Home</string>
+    <string name="errorPasswordLength">Password length should be at least 6 character</string>
+    <string name="signUp">Sign up</string>
+
+
+    <!--facebook-->
+    <string name="facebook_app_id" translatable="false">2189559427977049</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb2189559427977049</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_icon">App icon</string>
+    <string name="download">Download</string>
+    <string name="task">Task</string>
+    <string name="finish">Finish</string>
+    <string name="back">Back</string>
+    <string name="welcome">Welcome</string>
+    <string name="complete_task_first">First complete your task</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="full_name">Full name</string>
+    <string name="mobile_no">Mobile number</string>
+    <string name="email_id">Email id</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="signup">Signup</string>
+    <string name="errorReferenceCode">Enter Reference code</string>
+    <string name="already_have_an_account">Already have an account? Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account? Sign up</string>
+    <string name="defaultReferenceCode">CP000000</string>
+    <string name="registrationSuccessful">Registration successful</string>
+    <string name="skip">Skip</string>
+    <string name="logout_message">Are you sure you want to logout?</string>
+    <string name="start">Start</string>
+    <string name="adsInterstitial" translatable="false">@string/INTERSTITIAL_ID</string>
+    <string name="adsBannerSplash" translatable="false">@string/BANNER_ID</string>
+    <string name="adsVideoHome" translatable="false">@string/VIDEO_ID</string>
+    <string name="setting">Setting</string>
+    <string name="general">General</string>
+    <string name="userControls">User controls</string>
+    <string name="lockScreenAds">Lock screen ads</string>
+
+    <string name="permission_accessibility_setting_description">
+        "Turn on and it locks all soft key including HOME, RECENTS, BACK, MENU buttons.
+
+        You may be warned about potential privacy risk, that's just a regular informative
+        warning for any accessibility service. We promise NEVER EVER collecting your
+        personal information in this accessibility service."</string>
+
+    <string name="unlock_instructions">Slide to unlock</string>
+    <string name="unlock_locked">Locked</string>
+    <string name="unlock_unlocked">Unlocked</string>
+    <string name="unlock_thumb">Move this thumb</string>
+    <string name="onOffLockscreen">On/Off lock screen</string>
+    <string name="newsImage">News image</string>
+    <string name="view_all"><u>View All</u></string>
+    <string name="news">News</string>
+    <string name="offLockScreen">Off lock screen</string>
+    <string name="personal_detail">Personal Detail</string>
+    <string name="sponsor_detail">Sponsor Detail</string>
+    <string name="get_company_id">Get Company Id</string>
+    <string name="t_amp_c"><![CDATA[T&C]]></string>
+    <string name="and">and</string>
+    <string name="_91">+91</string>
+    <string name="invalidCountryCode">Invalid country code</string>
+    <string name="welcome_to_catterpillars">Welcome to Catterpillars</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="gps_setting">GPS setting</string>
+    <string name="gps_off">GPS off</string>
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="log_in">LOGIN</string>
+    <string name="enable_gps">Enable GPS for searching</string>
+    <string name="enable">Enable</string>
+    <string name="reffer_earn"><![CDATA[Reffer & Earn]]></string>
+    <string name="dashboard">Dashboard</string>
+    <string name="pressBackToExit">Press back button again to exit</string>
+    <string name="userProfile">User profile</string>
+    <string name="editProfile">Edit profile</string>
+    <string name="editChangeProfile">Edit or change profile</string>
+    <string name="changePassword">Change password</string>
+    <string name="changePasswordAccount">Change account password</string>
+    <string name="bank">Bank</string>
+    <string name="noTaskToView">No task to view</string>
+    <string name="guide_for_subscriotion">This app needs to access your Google account for YouTube channel subscription.</string>
+    <string name="time">Time</string>
+    <string name="colon">:</string>
+    <string name="bank_details">Bank details</string>
+    <string name="lock_screen">Lock screen</string>
+    <string name="doFacebookLoginFirst">Do facebook login first</string>
+    <string name="successfullyTaskCompleted">Successfully task completed</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dob">DOB</string>
+    <string name="taskCompleted">Task completed</string>
+    <string name="completed">Completed</string>
+    <string name="update_user_detail">Update User Detail</string>
+    <string name="dob_mm_dd_yyyy">DOB (mm/dd/yyyy)</string>
+    <string name="address">Address</string>
+    <string name="country">Country</string>
+    <string name="pincode">Pincode</string>
+    <string name="city">City</string>
+    <string name="area">Area</string>
+    <string name="state">State</string>
+    <string name="reset">Reset</string>
+    <string name="update">Update</string>
+    <string name="bank_detail">Bank detail</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="account_number">Account number</string>
+    <string name="account_holder_name">Account holder name</string>
+    <string name="notice_bank_change"><i>You will be charged Rs.5 from your wallet on each bank verification.</i></string>
+    <string name="bank_name">Bank name</string>
+    <string name="old_password">Old password</string>
+    <string name="confiorm_password">Confiorm password</string>
+    <string name="new_password">New password</string>
+    <string name="change_bank">Change bank</string>
+    <string name="change_password">Change password</string>
+    <string name="reset_password">Reset password</string>
+    <string name="notice_reset_password"><i>You will receive a one time password message, carrier rates may apply</i></string>
+    <string name="now_you_can_go_back">Now you can go back</string>
+    <string name="detailsSendsToYourMail">Details send to your registered email</string>
+    <string name="passwordChangeSuccessfully">Password change successfully</string>
+    <string name="balance">Balance</string>
+    <string name="notice_forgot_password"><i>You will receive password on your registerd email id</i></string>
+    <string name="verify_mobile_msg">Please Verify Your Registered Mobile No.</string>
+
+
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
+    <string name="from_user">From user</string>
+    <string name="user_count">User count</string>
+    <string name="signup_task">SignUp task</string>
+    <string name="daily_task">Daily task</string>
+    <string name="filter">Filter</string>
+    <string name="daily_task_status">Daily task status</string>
+    <string name="signup_task_status">Signup task status</string>
+    <string name="end_date">End date</string>
+    <string name="start_date">Start date</string>
+    <string name="data_null_error">Some thing error, please try after some time.</string>
+    <string name="network_not_found">Network error, please try after some time</string>
+    <string name="update_available">New update is available</string>
+    <string name="debit_amount">Debit Amount</string>
+    <string name="credit_amount">Credit Amount</string>
+    <string name="task_completed">Task Completed</string>
+    <string name="enable_lock_msg">Enable Lock screen to earn daily If lock screen will Disable you will Get only 25% Amount of Today\'s Earning</string>
+    <string name="timer">00:00</string>
+    <string name="show_upline_contact">Show upline contact</string>
+    <string name="show_downline_contact">Show downline contact</string>
+    <string name="msg_upline_contact">On enabling this your upline users can view your contact number</string>
+    <string name="msg_downline_contact">On enabling this your downline users can view your contact number</string>
+    <string name="share_msg">Refer to your contacts you will Get INR 6 on every signup and Task completion Task.</string>
+    <string name="share_now">Share Now</string>
+    <string name="share_title">Refer and Earn unlimited</string>
+    <string name="share_checkbox">Show Mobile No In Referal Link</string>
+    <string name="task_complete">You have completed task successfully</string>
+    <string name="task_not_compleated">Oops! You have not completed your task</string>
+    <string name="load_list_count">Load list count</string>
+    <string name="daily_task_compleated">Daily Task Completed</string>
+    <string name="daily_task_msg">Congratulation your Daily Task has been complete INR 6 has been credited in your wallet.</string>
+    <string name="share_daily_task_notice">Share your refreal code to your contacts to Earn More.</string>
+    <string name="signup_task_completed">Signup Task Completed</string>
+    <string name="signup_task_msg">Congratulation your SignUp Task has been completed INR 15 has been credited in your wallet, Now you can recharge with this amount</string>
+    <string name="billadda_link">https://billadda.com/</string>
+    <!--ca-app-pub-8423837804323248/5967765563-->
+    <!--Video ads-->
+
+    <!--ca-app-pub-8423837804323248/6198371830-->
+    <!--Full screen ads-->
+
+    <!--ca-app-pub-8423837804323248/6301564217-->
+    <!--banner ads-->
+</resources>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<data>
+    <variable
+        name="data"
+        type="com.solution.catterpillars.ui.home.dashboard.member.model.List" />
+</data>
+<android.support.v7.widget.CardView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4dp"
+    app:cardCornerRadius="@dimen/_4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/userCountView"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/name"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_4dp"
+                    android:paddingTop="@dimen/_4dp"
+                    android:paddingRight="@dimen/_4dp"
+                    tools:text="User name in appp"
+                    android:text="@{data.memberName}"
+                    android:textColor="@android:color/black" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/mobile"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_4dp"
+                    android:paddingTop="@dimen/_2dp"
+                    android:paddingRight="@dimen/_4dp"
+                    tools:text="+915634982547"
+                    android:text="@{data.mobile}"
+                    android:textColor="@color/moreDarkgrey" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/email"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_4dp"
+                    android:paddingTop="@dimen/_2dp"
+                    android:paddingRight="@dimen/_4dp"
+                    tools:text="kantagarwalvishnu@gmail.com"
+                    android:text="@{data.email}"
+                    android:textColor="@color/moreDarkgrey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userCountView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:background="@drawable/rounded_focused"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_2dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_4dp"
+                    android:text="@string/user_count"
+                    android:textColor="@android:color/black" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/userCount"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_2dp"
+                    tools:text="14"
+                    android:text="@{data.userCount}"
+                    android:textColor="@color/moreDarkgrey" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/date"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="@dimen/_8sdp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_4dp"
+                tools:text="19/11/2018"
+                android:text="@{data.regDate}"
+                android:textColor="@color/moreDarkgrey" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/time"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawablePadding="@dimen/_8sdp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_4dp"
+                tools:text="07:43:14 PM"
+                android:text="@{data.regTime}"
+                android:textColor="@color/moreDarkgrey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_4dp"
+            android:layout_marginRight="@dimen/_4dp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@color/morelightgrey"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_2dp"
+                android:layout_weight="1"
+                android:background="@color/moremorelightgrey"
+                android:orientation="vertical"
+                android:padding="@dimen/_2dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_4dp"
+                    android:text="@string/signup_task"
+                    android:textColor="@android:color/black" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/signUpTaskStatus"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_2dp"
+                    tools:text="Compleated"
+                    android:text="@{data.signupTaskStatus}"
+                    android:textColor="@android:color/holo_green_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/moremorelightgrey"
+                android:orientation="vertical"
+                android:padding="@dimen/_2dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_4dp"
+                    android:text="@string/daily_task"
+                    android:textColor="@android:color/black" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/dailyTaskStatus"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_2dp"
+                    tools:text="Pending"
+                    android:text="@{data.dailyTaskStatus}"
+                    android:textColor="@android:color/holo_red_dark" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</layout>
